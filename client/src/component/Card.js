@@ -13,9 +13,9 @@ const Card = ({user,setping,ping}) => {
     <div className='cont'> <h3> User name :</h3>{user.name}</div>
     <div className='cont'> <h3> Age:</h3>{user.age} </div>
      <div className=' fv'><h3>Favoird foods:</h3><br/><ul>
-        {user.favoritesFoods.map((el)=><li>{el}</li>)}</ul></div>
-        <button onClick={()=>{setshow(!show); 
-          <Updateuser  user={user} ping={ping} setping={setping} show={show} setshow={setshow}/>;}}>update</button>
+        {user.favoritesFoods.map((el,i)=><li key={i}>{el}</li>)}</ul></div>
+        <button onClick={()=>{setshow(!show)}}>update</button>
+          <Updateuser  user={user} ping={ping} setping={setping} show={show} setshow={setshow}/>
         <button onClick={()=>{dispatch(delUser(user._id));setping(!ping);}}>delete</button>
         </div>
      
