@@ -23,7 +23,7 @@ const Card = ({user,setping,ping}) => {
      </div>
  
     
-  )
+  ) 
 }
 
 export default Card
