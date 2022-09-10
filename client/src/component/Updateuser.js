@@ -18,7 +18,7 @@ const Updateuser = ({ping,setping,user,show,setshow}) => {
     <input type='number' placeholder="age" onChange={(e)=>setupdate({...update,age: e.target.value})} />
     
     <div className="Adduser_btns">
-    <button className='btn_save'onClick={(e)=>{dispatch(updtUser(user._id,update));setping(!ping); setshow(!show);}} >Save</button>
+    <button className='btn_save'onClick={(e)=>{dispatch(updtUser({id:user._id,user:update}));setping(!ping); setshow(!show);}} >Save</button>
     <button className='btn_food' onClick={()=>setshow(!show)} >annuler</button>
     </div>
     </div>:null}</div>

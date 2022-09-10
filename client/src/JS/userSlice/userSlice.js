@@ -29,7 +29,7 @@ export const delUser=createAsyncThunk('user/del',async (id) => {
     console.log(error)
   }
 })
-export const updtUser=createAsyncThunk('user/updt',async (id,user) => {
+export const updtUser=createAsyncThunk('user/updt',async ({id,user}) => {
   try {
     let result= axios.put(`http://localhost:5000/person/put/${id}`,user);
   
