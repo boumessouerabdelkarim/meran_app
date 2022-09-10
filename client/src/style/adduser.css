@@ -1,0 +1,68 @@
+.Adduser{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    justify-content: space-between;
+    
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(126, 123, 123);
+    margin-top: 35rem;
+    border: 1px  solid black;
+
+}
+.Adduser_btns{
+    display: flex;
+    margin-bottom: 1rem;
+}
+h1{
+    font-size: 30px;
+    font-weight: 300;
+    color: red;
+}
+input{
+    font-size: 16px;
+    font-weight: 300;
+padding: 15px;
+
+}
+.btn_food{background-color: blue;
+    color: white;
+
+width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    margin-left: 1rem;
+}
+.container{
+    width: 100%;
+    height: 5rem;
+    background-color: black;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+.btn_save{
+    background-color: blue;
+    color: white;
+border: 2px solid black;
+width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.food{
+    display: flex;
+
+}
+.food>*{
+    margin-left: 10px;
+}
